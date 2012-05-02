@@ -31,9 +31,13 @@
         <div class="container">
           <a class="brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
           <ul class="nav">
-            {% assign pages_list = site.pages %}
+            <!--{% assign pages_list = site.pages %}
             {% assign group = 'navigation' %}
-            {% include JB/pages_list %}
+            {% include JB/pages_list %}-->
+            <li><a href="atom.xml">RSS</a></li>
+            <li><a href="https://twitter.com/#!/TrevorReznik">@TrevorReznik</a></li>
+            <li><a href="https://github.com/mathieuancelin">mathieuancelin on github</a></li>
+            <li>
           </ul>
         </div>
       </div>

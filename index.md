@@ -37,6 +37,9 @@ layout: page
     <h3>Mathieu ANCELIN</h3>
     <h4><a href="https://twitter.com/#!/TrevorReznik">@TrevorReznik</a></h4>
     <h4><a href="https://github.com/mathieuancelin">mathieuancelin</a></h4>
-    <h4><a href="http://mathieuancelin.github.com/atom.xml">RSS feed</a></h4>
+    <h4><a href="atom.xml">RSS feed</a></h4>
+    <h4><a href="archives.html">Archives</a></h4>
+    <h4><a href="tags.html">Tags</a></h4>
+
   </div>
 </div>
