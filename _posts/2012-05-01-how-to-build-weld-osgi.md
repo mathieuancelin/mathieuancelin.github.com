@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How to build Weld OSGi"
+title: "How to build Weld-OSGi"
 description: "This article explains how to build Weld-OSGi from sources"
 category: [Dev]
 tags: [Weld-OSGi, OSGi, Weld, CDI]
