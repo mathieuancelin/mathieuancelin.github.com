@@ -22,6 +22,7 @@
     <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
   -->
+      <script type="text/javascript" src="/js/twitter.js"></script>
   </head>
 
   <body>
@@ -47,6 +48,15 @@
 
       <div class="content">
         {{ content }}
+        <script>
+            tw.search('from:trevorreznik',function(data){
+                for(var i = 0; i <4; i+=1){
+                    var p = document.createElement('li');
+                    p.innerHTML = '<span> (' + data[i].user + ')</span> &raquo; ' + data[i].msg ;
+                    document.querySelector('#from_TrevorReznik').appendChild(p);
+                }
+            });
+      </script>
       </div>
 
       <footer>
