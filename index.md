@@ -33,7 +33,7 @@ layout: page
   </div>
   </div>
   <div class="span4">
-    <img src="http://dl.dropbox.com/u/3121809/mathieu-avatar.jpg"></img>
+    <img src="/mathieu-avatar.jpg"></img>
     <h3>Mathieu ANCELIN</h3>
     <h4><a href="https://github.com/mathieuancelin/mathieuancelin.github.com/issues/new"  target="_blank">Ask me anything</a></h4>
     <h4><a href="https://twitter.com/#!/TrevorReznik">@TrevorReznik</a></h4>
