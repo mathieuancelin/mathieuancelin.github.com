@@ -39,6 +39,7 @@
             <li><a href="/atom.xml"><img src="/rss_32.png"><!--RSS--></a></li>
             <li><a href="https://twitter.com/#!/TrevorReznik"><img src="/twitter_32.png"><!--@TrevorReznik--></a></li>
             <li><a href="https://github.com/mathieuancelin"><img src="/github_32.png"><!--mathieuancelin on github--></a></li>
+            <li><a href="http://fr.linkedin.com/pub/mathieu-ancelin/44/5a0/822"><img src="/linkedin_32.png"><!--mathieuancelin on github--></a></li>
             <li><a href="https://github.com/mathieuancelin/mathieuancelin.github.com/issues/new" target="_blank"><img src="/email_32.png"><!--Ask me anything--></a></li>
             <li>
           </ul>
@@ -52,7 +53,7 @@
         {{ content }}
         <script>
             tw.search('from:trevorreznik',function(data){
-                for(var i = 0; i <4; i+=1){
+                for(var i = 0; i <5; i+=1){
                     var p = document.createElement('li');
                     p.innerHTML = '<span> (' + data[i].user + ')</span> &raquo; ' + data[i].msg ;
                     document.querySelector('#from_TrevorReznik').appendChild(p);
