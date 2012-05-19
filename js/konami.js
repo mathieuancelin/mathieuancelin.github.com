@@ -1,17 +1,3 @@
-
-/*
-	* Konami-JS ~ 
-	* :: Now with support for touch events and multiple instances for 
-	* :: those situations that call for multiple easter eggs!
-	* Code: http://konami-js.googlecode.com/
-	* Examples: http://www.snaptortoise.com/konami-js
-	* Copyright (c) 2009 George Mandis (georgemandis.com, snaptortoise.com)
-	* Version: 1.3.3 (4/16/2011)
-	* Licensed under the GNU General Public License v3
-	* http://www.gnu.org/copyleft/gpl.html
-	* Tested in: Safari 4+, Google Chrome 4+, Firefox 3+, IE7+, Mobile Safari 2.2.1 and Dolphin Browser
-*/
-
 (function (){
   "use strict";
 
@@ -34,7 +20,7 @@ var Konami = function() {
 				}
 			},
 	        input:"",
-	        pattern:"3838404037393739666513",
+	        pattern:"38384040373937396665",
 		/*pattern:"38384040373937396665",*/
 	        load: function(link) {					
 				this.addEvent(document,"keydown", function(e,ref_obj) {											
