@@ -8,7 +8,8 @@ description: "About me"
 
 <div class="row">
   <div class="span8">
-    <p><b>Name:</b> Mathieu ANCELIN<br/>
+    <p>
+      <div id="name"><b>Name:</b> Mathieu ANCELIN</div>
     <b>Bio tags:</b> French, Open Source, JCP, CDI, OSGi, Weld, JBoss, Play, GlassFish, JOnAS<br/>
     <b>Employer:</b> <a href="http://www.serli.com">SERLI</a><br/>
     <b>Resume:</b> <a href="http://fr.linkedin.com/pub/mathieu-ancelin/44/5a0/822">LinkedIn</a><br/>
@@ -38,8 +39,12 @@ description: "About me"
       if ($('#math').attr('src') != '/nyantocat.gif') {
         if ($('#math').attr('src') != '/Mathieu-evil.png') {
           $('#math').attr('src', '/Mathieu-evil.png')
+          $('.page-header h1').html('About Evil Mathieu ANCELIN')
+          $('#name').html('<b>Name:</b> Evil Mathieu ANCELIN')
         } else {
           $('#math').attr('src', '/Mathieu.jpg')
+          $('.page-header h1').html('About Mathieu ANCELIN')
+          $('#name').html('<b>Name:</b> Mathieu ANCELIN')
         }
       }
     })
