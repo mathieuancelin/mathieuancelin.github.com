@@ -28,4 +28,20 @@ description: "About me"
   <div class="span4">
     <img id="math" src="/Mathieu.jpg"></img><br/>
   </div>
+  <div id="preload">
+      <img src="/Mathieu-evil.png" width="1" height="1" />
+    </div>
 </div>
+<script type="text/javascript">
+  $(window).ready(function() {
+    $('#math').click(function() {
+      if ($('#math').attr('src') != '/nyantocat.gif') {
+        if ($('#math').attr('src') != '/Mathieu-evil.png') {
+          $('#math').attr('src', '/Mathieu-evil.png')
+        } else {
+          $('#math').attr('src', '/Mathieu.jpg')
+        }
+      }
+    })
+  })
+</script>
