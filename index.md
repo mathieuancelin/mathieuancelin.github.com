@@ -28,7 +28,7 @@ layout: page
             {% endfor %}
         </ul>
         <br>
-        <b><a href="all.html">... all posts &raquo;</a></b>
+        <b><a href="/archive.html">... all posts &raquo;</a></b>
     </div>
   </div>
   </div>
@@ -38,9 +38,9 @@ layout: page
     <h4><a href="https://github.com/mathieuancelin/mathieuancelin.github.com/issues/new"  target="_blank">Ask me anything</a></h4>
     <h4><a href="https://twitter.com/#!/TrevorReznik">@TrevorReznik</a></h4>
     <h4><a href="https://github.com/mathieuancelin">mathieuancelin on github</a></h4>
-    <h4><a href="atom.xml">RSS feed</a></h4>
-    <h4><a href="archives.html">Archives</a></h4>
-    <h4><a href="tags.html">Tags</a></h4>
+    <h4><a href="/atom.xml">RSS feed</a></h4>
+    <h4><a href="/archive.html">All posts</a></h4>
+    <h4><a href="/tags.html">Tags</a></h4>
     <hr>
     <div>
         <h3>Last Tweets</h3>
