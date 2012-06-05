@@ -44,10 +44,10 @@ layout: page
     <hr>
     <div>
         <h3>Last Tweets</h3>
-        <ul class="posts" id="from_TrevorReznik"></ul>
+        <!--<ul class="posts" id="from_TrevorReznik"></ul>-->
+        <table class="table table-striped" id="from_TrevorReznik">
+        </table>
         </div>
         <hr>
-
-
   </div>
 </div>

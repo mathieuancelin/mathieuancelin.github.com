@@ -56,8 +56,8 @@
         <script>
             tw.search('from:trevorreznik',function(data){
                 for(var i = 0; i <5; i+=1){
-                    var p = document.createElement('li');
-                    p.innerHTML = '<span> (' + data[i].user + ')</span> &raquo; ' + data[i].msg ;
+                    var p = document.createElement('tr');
+                    p.innerHTML = '<td><span><b>' + data[i].user + '</b></span> &raquo; ' + data[i].msg + '</td>' ;
                     document.querySelector('#from_TrevorReznik').appendChild(p);
                 }
             });
