@@ -14,7 +14,7 @@
     <!-- Le styles -->
     <link href="{{ ASSET_PATH }}/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="{{ ASSET_PATH }}/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
-
+    <link href="/js/clippy.css" rel="stylesheet" type="text/css" media="all">
     <!-- Le fav and touch icons -->
   <!-- Update these with your own images
     <link rel="shortcut icon" href="images/favicon.ico">
@@ -25,6 +25,7 @@
       <script type="text/javascript" src="/js/twitter.js"></script>
       <script type="text/javascript" src="/js/jquery-1.7.2.min.js"></script>
       <script type="text/javascript" src="/js/konami.js"></script>
+      <script type="text/javascript" src="/js/clippy.min.js"></script>
   </head>
 
   <body>
@@ -66,6 +67,10 @@
                 $('#math').attr('src', '/nyantocat.gif')
             }
             konami.load()
+            clippy.load('Clippy', function(agent) {
+                // Do anything with the loaded agent
+                agent.show();
+            });
       </script>
       </div>
 

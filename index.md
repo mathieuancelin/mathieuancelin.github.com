@@ -50,4 +50,9 @@ layout: page
         </div>
         <hr>
   </div>
+  <script type="text/javascript">
+      /**clippy.load('Merlin', function(agent) {
+        agent.show();
+    });**/
+  </script>
 </div>
