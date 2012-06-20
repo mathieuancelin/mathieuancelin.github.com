@@ -69,7 +69,13 @@
             konami.load()
             clippy.load('Clippy', function(agent) {
                 // Do anything with the loaded agent
-                agent.show();
+                agent.show()
+
+                setInterval(doSomething, 10000)
+
+                function doSomething() {
+                  agent.animate()
+                }
             });
       </script>
       </div>
