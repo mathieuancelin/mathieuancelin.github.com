@@ -65,18 +65,19 @@
             var konami = new Konami()
             konami.code = function() {
                 $('#math').attr('src', '/nyantocat.gif')
+                   clippy.load('Clippy', function(agent) {
+                      // Do anything with the loaded agent
+                      agent.show()
+
+                      setInterval(doSomething, 10000)
+
+                      function doSomething() {
+                          agent.animate()
+                      }
+                });
             }
             konami.load()
-            clippy.load('Clippy', function(agent) {
-                // Do anything with the loaded agent
-                agent.show()
-
-                setInterval(doSomething, 10000)
-
-                function doSomething() {
-                  agent.animate()
-                }
-            });
+            
       </script>
       </div>
 
