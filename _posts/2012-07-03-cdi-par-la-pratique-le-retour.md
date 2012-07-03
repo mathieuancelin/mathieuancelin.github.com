@@ -9,6 +9,8 @@ tags: [CDI, Weld, Weld-OSGi, OSGi, Social, Seam, Seam Social, Devoxx, Devoxx Fra
 
 The videos from my CDI presentation with Antoine Sabot-Durant at Devoxx France have been released.
 
+(The Seam Social project has become Agorava project => http://agorava.org)
+
 <object width="395" height="395">
   <param name="movie" value="http://www.parleys.com/dist/share/parleysshare.swf"/>
   <param name="allowFullScreen" value="true"/>
