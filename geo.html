@@ -21,6 +21,7 @@
                 $('#latitude').html(position.coords.latitude)
                 $('#longitude').html(position.coords.longitude)
             }
+            setInterval(getLocation, 1000)
         </script>
     </body>
 </html>
