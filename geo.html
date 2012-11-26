@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Geolocation</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="js/jquery-1.7.2.min" type="text/javascript"></script>
+    </head>
+    <body>
+        <div id="latitude"></div><br/>
+        <div id="longitude"></div><br/>
+        <div id="error"></div><br/>
+        <script>
+            function getLocation() {
+                if (navigator.geolocation) {
+                    navigator.geolocation.getCurrentPosition(showPosition)
+                } else {
+                    $('#error').html("<b>Geolocation is not supported by this browser.</b>")
+                }
+            }
+            function showPosition(position) {
+                $('#latitude').html(position.coords.latitude)
+                $('#longitude').html(position.coords.longitude)
+            }
+        </script>
+    </body>
+</html>
