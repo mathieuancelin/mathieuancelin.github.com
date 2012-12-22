@@ -5,7 +5,7 @@
   // end CommonJS header
 
 var Konami = function() {
-	var konami= {
+	var konami = {
 			addEvent:function ( obj, type, fn, ref_obj )
 			{
 				if (obj.addEventListener)
