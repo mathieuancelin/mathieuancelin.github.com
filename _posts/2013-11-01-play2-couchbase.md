@@ -7,8 +7,6 @@ tags: [Play, Play framework, Play 2, Couchbase, Scala, Java, Async, Reactive]
 ---
 {% include JB/setup %}
 
-Some months ago, a friend of mine asked me if 
-
 Introducing play2-couchbase
 =================================
 
@@ -16,7 +14,10 @@ For several months now, I'm working on a project that is completely different fr
 
 At the beginning of the year, I had the opportunity to attend several presentation about Couchbase and I must say that the technology attracted me. But I didn't had the chance at the time to really dig into the project. A couple of month later, one of my colleague asked me about it and how to use it from a Play2 Scala application. I answered that the Java API should be enought, but I started thinking about it and how to integrate it into the reactive programming model of Play 2.
 
-And that's how it begins, I started writing few classes to help integrate Couchbase into a Play 2 application and it became an actual Play2 plugin. 
+And that's how it began, I started writing few classes to help integrate Couchbase into a Play 2 application and it became an actual Play2 plugin. 
+
+play2-couchbase is reactive
+----------------------------
 
 This project aims to help you using Couchbase from a Play 2 app, use a reactive programming style to deal with this datastore and also improve your productivity as a Java or Scala developer. play2-couchbase is a pure reactive access layer to a Couchbase server and is designed to avoid any kind of blocking request. Every operation returns immediately, freeing the running thread and resuming execution when it is over. It allows you to stream data both into and from your Couchbase servers.
 
@@ -113,7 +114,7 @@ object UserController extends Controller with CouchbaseController {
 
 ```
 
-Here I use a special Controller `CouchbaseController` that allow the use of `CouchbaseAction("default")` that targets a bucket for the following block. Then I try to get a specific document that may or may not be here. As it returns a `Future`, I need to map It to transform it into an HTTP result. You can note that play2-couchbase automatically map a JSON document to a `User` instance. To do that I use an implicit Json formatter (`implicit val userReader = Json.reads[User]`) that can serialize and deserialize JSON documents to User instances. As it's async you also need to import or declare an implicit `ExecutionContext` to handle tasks (`import play.api.libs.concurrent.Execution.Implicits._`).
+Here I use a special trait `CouchbaseController` that allows the use of `CouchbaseAction("default")` that targets a bucket for the following block. Then I try to get a specific document that may or may not be there. As it returns a `Future`, I need to map It to transform it into an HTTP result. You can note that play2-couchbase automatically map a JSON document to a `User` instance. To do that I use an implicit Json formatter (`implicit val userReader = Json.reads[User]`) that can serialize and deserialize JSON documents to User instances. As it's async you also need to import or declare an implicit `ExecutionContext` to handle tasks (`import play.api.libs.concurrent.Execution.Implicits._`).
 
 You can also use the API from elsewhere
 
@@ -282,9 +283,9 @@ In the `User` class you can see how to use Couchbase queries from play2-couchbas
 And what about streaming ???
 -------------------------------
 
-Unfortunatelly, built-in streaming feature are only available from Scala. 
+Unfortunatelly, built-in streaming features are only available from Scala. 
 
-Streaming features makes heavy use of play Iteratee library. If you're not familiar with this programming model, you can read more about it at http://www.playframework.com/documentation/2.2.x/Iteratees
+Streaming features make heavy use of play Iteratee library. If you're not familiar with this programming model, you can read more about it at http://www.playframework.com/documentation/2.2.x/Iteratees
 
 Streaming in
 -------------
@@ -379,9 +380,9 @@ for (i <- 0 to 200) {
 
 You can also insert data coming from an Enumerator.
 
-When a json object is inserted, a timestamp is add to the object and this timestamp will be used to manage all the capped bucket features.
+When a json object is inserted, a timestamp is added to the object and this timestamp will be used to manage all the capped bucket features.
 
-The nice part with capped buckets is the `tail` function. It's like using a `tail -f`command on the datas of the capped bucket
+The nice part with capped buckets is the `tail` function. It's like using a `tail -f`command on the data of the capped bucket
 
 ```scala
 
